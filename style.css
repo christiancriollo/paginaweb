@@ -1,15 +1,18 @@
-```css
-/* ESTILOS GENERALES */
+/* ------------------------------
+   CONFIGURACIÓN GENERAL
+------------------------------ */
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #111;
+    background-color: #111111;
     color: white;
 }
 
 
-/* ENCABEZADO */
+/* ------------------------------
+   ENCABEZADO
+------------------------------ */
 
 header {
     background-color: #1c1c1c;
@@ -19,7 +22,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 header p {
@@ -28,7 +31,9 @@ header p {
 }
 
 
-/* CONTENIDO */
+/* ------------------------------
+   CATÁLOGO
+------------------------------ */
 
 .catalogo {
     text-align: center;
@@ -41,42 +46,52 @@ header p {
 }
 
 
-/* CONTENEDOR DE GUITARRAS */
+/* ------------------------------
+   CONTENEDOR DE GUITARRAS
+------------------------------ */
 
 .guitarras {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 30px;
     flex-wrap: wrap;
 }
 
 
-/* TARJETAS */
+/* ------------------------------
+   TARJETAS
+------------------------------ */
 
 .guitarra {
-    background-color: #222;
+    background-color: #222222;
+
     width: 350px;
+
     padding: 20px;
+
     border-radius: 15px;
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
 
 
-/* EFECTO AL PASAR EL MOUSE */
+/* Efecto cuando pasas el mouse */
 
 .guitarra:hover {
     transform: translateY(-10px);
 }
 
 
-/* IMÁGENES */
+/* ------------------------------
+   IMÁGENES
+------------------------------ */
 
 .guitarra img {
     width: 100%;
-    height: 250px;
+    height: 300px;
 
     object-fit: cover;
 
@@ -84,31 +99,40 @@ header p {
 }
 
 
-/* TÍTULOS */
+/* ------------------------------
+   TÍTULOS
+------------------------------ */
 
 .guitarra h3 {
     font-size: 24px;
+    margin-top: 20px;
 }
 
 
-/* DESCRIPCIÓN */
+/* ------------------------------
+   DESCRIPCIÓN
+------------------------------ */
 
 .guitarra p {
     color: #cccccc;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 
-/* PIE DE PÁGINA */
+/* ------------------------------
+   PIE DE PÁGINA
+------------------------------ */
 
 footer {
     background-color: #1c1c1c;
+
     text-align: center;
+
     padding: 25px;
+
     margin-top: 30px;
 }
 
 footer p {
     color: #aaaaaa;
 }
-```
